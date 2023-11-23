@@ -13,7 +13,7 @@ class BookscraperPipeline:
     def __init__(self):
 
         ## Create/Connect to database
-        self.con = sqlite3.connect('pokemondb.db')
+        self.con = sqlite3.connect('newpokemon.db')
 
         ## Create cursor, used to execute commands
         self.cur = self.con.cursor()
