@@ -27,6 +27,6 @@
 #             next_page_number = int(current_page_number) + 1
 #             next_page = f"https://scrapeme.live/shop/page/{next_page_number}/"
 #             yield scrapy.Request(next_page, callback=self.parse)
-#         else:  # Si on est sur la première page, où il n'y a pas de numéro de page dans l'URL
+#         else:  # Si on est sur la première page, ou il n'y a pas de numéro de page dans l'URL
 #             next_page = "https://scrapeme.live/shop/page/2/"
 #             yield scrapy.Request(next_page, callback=self.parse)
